@@ -1,0 +1,22 @@
+# skill-tuner local artifacts
+*.bak-*
+_tuner/
+
+# never commit real business data
+*.xlsx
+*.xls
+*.xlsm
+*.csv
+
+# internal
+BRIEF.md
+
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+
+# OS
+Thumbs.db
+.DS_Store
