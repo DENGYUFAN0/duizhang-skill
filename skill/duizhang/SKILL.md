@@ -4,7 +4,6 @@ description: |
   对账·黑盒系统导入排障：把 Excel/模板数据导进规则不透明的企业系统（央企国企数据治理平台、多家外包拼出来的系统）——批量导入失败、报错看不懂、照模板填了还传不上、要按模板重填一版时用。以平台导入记录和成功样本为唯一真相，数字对账反推隐藏规则，小样本探针验证，再按实测规则全量生成；附国企协作与向上汇报对策。
   触发：`/duizhang`、消息以「导入对账」开头，或用户明确在处理某系统的导入模板/导入失败；泛泛聊 Excel、做财务对账不激活。
   不用于：写系统代码、绕过系统权限或校验、伪造数据凑数。
-  English: debug bulk imports into opaque enterprise platforms by reconciling the platform's own counts.
 ---
 
 # 对账（往黑盒系统里导数据）

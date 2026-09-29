@@ -1,8 +1,8 @@
 # 对账 · duizhang-skill
 
-> 平台说了什么不重要，平台做了什么才重要。 · *Debug bulk imports into opaque enterprise platforms by reconciling the platform's own numbers.*
+> 平台说了什么不重要，平台做了什么才重要。
 
-一个 agent skill（适用于 Claude Code 及任何支持 SKILL.md 的 agent），专治「把 Excel 按模板填好、导进一个规则不透明的企业系统，结果成批失败」。典型场景是央企/国企的数据治理平台、资源目录、主数据、报送系统——往往由多家供应商先后建设，模板说明和真实校验对不上，报错也不说人话。
+一个给 AI 助手用的技能包（适用于 Claude Code，以及任何能读取 SKILL.md 的 AI 助手），专治「把 Excel 按模板填好、导进一个规则不透明的企业系统，结果成批失败」。典型场景是央企/国企的数据治理平台、资源目录、主数据、报送系统——往往由多家供应商先后建设，模板说明和真实校验对不上，报错也不说人话。
 
 它的核心方法只有一条：**以平台自己的导入记录、错误报告和曾经成功过的文件为唯一真相，用数字对账反推隐藏规则**。每条假说都必须精确复现平台报过的数字（成功数、失败数、错误条数），对上了才算找到规则。
 
@@ -78,10 +78,6 @@ pip install openpyxl pandas
 
 案例已脱敏：单位、系统、人员、库名均已泛化，不针对任何具体机构或供应商，也不构成对任何具体产品的评价。文中关于「国企工作方式」的内容是一次项目的经验观察和少量有出处的公开资料，不是统计结论。
 
-## English
-
-**duizhang** ("reconciliation") is an agent skill for importing spreadsheet data into opaque enterprise platforms whose documented template rules don't match their real validation. Instead of trusting the template, it treats the platform's own import log, error report and any previously successful file as ground truth, and reverse-engineers hidden rules by reconciling counts: a hypothesis only stands if it reproduces the platform's numbers exactly. Includes a catalogue of common platform flaws, a playbook for working inside large state-owned organizations, and four Python helpers (multi-normalization duplicate counter, value-combination diff, probe-file generator, structural xlsx diff). Content is in Chinese.
-
-## License
+## 许可
 
 [MIT](LICENSE) © 2026 DENG YUFAN
