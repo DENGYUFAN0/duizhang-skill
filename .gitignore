@@ -11,6 +11,10 @@ _tuner/
 # internal
 BRIEF.md
 
+# private recipes stay local, never published
+**/private-*
+**/private_*
+
 # python
 __pycache__/
 *.pyc
